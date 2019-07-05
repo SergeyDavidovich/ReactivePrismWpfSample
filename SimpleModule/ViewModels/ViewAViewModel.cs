@@ -10,20 +10,22 @@ namespace SimpleModule.ViewModels
 {
     public class ViewAViewModel : ReactiveObject, INavigationAware
     {
-
+        private IRegionManager _regionManager;
+        public ViewAViewModel(IRegionManager regionManager)
+        {
+            _regionManager = regionManager;
+        }
         public bool IsNavigationTarget(NavigationContext navigationContext)
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public void OnNavigatedFrom(NavigationContext navigationContext)
         {
-            throw new NotImplementedException();
         }
 
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
-            throw new NotImplementedException();
         }
     }
 }

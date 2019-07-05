@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SimpleModule.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace SimpleModule.Views
         public ViewB()
         {
             InitializeComponent();
+            this.DataContext = new ViewBViewModel();
         }
     }
 }
